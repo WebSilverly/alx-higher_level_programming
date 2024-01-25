@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-i = 0
-while i < 90:
-    print(str(i) + ',  ')
-    i += 1
-    if i < 10:
-        print('0' + str(i))
-    else:
-        continue
+for i in range(0, 10):
+    print(f'0{i}, ')
+for i in range(12, 90):
+    print(f'{i}, ')
