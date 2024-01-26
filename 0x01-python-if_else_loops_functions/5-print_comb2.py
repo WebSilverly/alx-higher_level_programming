@@ -1,8 +1,3 @@
 #!/usr/bin/python3
-"""for i in range(0, 100):
-    if i < 10:
-        print(f'0{i}, ')
-    else:
-        print(f'{i}, ')""""
-
-
+for i in range(100):
+    print("{:02d}, ".format(i))
