@@ -4,5 +4,5 @@ def add(a, b):
     b = 2
 
     add_0 = a + b
-    print(add_0)
-    #return(add_0)
+    return add_0 
+    print(f"{a} + {b} = {add_0}")
