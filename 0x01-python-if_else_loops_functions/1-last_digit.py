@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-<<<<<<< HEAD
-if number > 5:
-    print(f'Last digit of {str(number)} is {str(number[4])} and is not greater than 6')
-=======
-if number > 1:
-    print(f'Last digit of {str(number)} is {str(number[4])}')
->>>>>>> 9e5370665696c8ee01954c3c5699ba5106d87894
+
+if abs(number) % 10  > 5:
+    print(f'Last digit of {number} is {abs(number) % 10} and is greater than 5')
+
+elif abs(number) % 10 == 0:
+    print(f'Last digit of {number} is {abs(number) % 10} and is 0')
+
+elif abs(number) % 10 < 0:
+    print(f'Last digit of {number} is {abs(number) % 10} is less than 6 and not 0')
+
+
