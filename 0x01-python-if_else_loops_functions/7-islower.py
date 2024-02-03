@@ -1,28 +1,21 @@
 #!/usr/bin/python3
-"""def islower(c):
-    if c == c.upper():
-        return False
-    else:
-        return True"""
 
-"""def islower(c):
-    if ord(c) % 2 == 0:
-        return False
-    else:
-        return True"""
-
-def under(m):
+def lower_case(letters):
     outcome = ""
-    for letters in m:
-        if 'A' <= letters <= 'Z':
-            outcome += chr(ord(letters) - ord('A') + ord('a'))
+    for letter in letters:
+        if 'A' <= letter <= 'Z':
+            outcome += chr(ord(letter) - ord('A') + ord('a'))
         else:
-            outcome += letters
+            outcome += letter
     return outcome
 
-
+        
 def islower(c):
-    if c != under(c):
+    if c != lower_case(c):
+        return False
+    elif c == '3':
         return False
     else:
         return True
+
+
