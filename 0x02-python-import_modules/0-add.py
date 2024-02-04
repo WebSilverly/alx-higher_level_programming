@@ -4,5 +4,7 @@ def add(a, b):
     b = 2
 
     add_0 = a + b
-    return add_0 
+    
     print(f"{a} + {b} = {add_0}")
+if __name__ == "__main__":
+    add(1, 2)
